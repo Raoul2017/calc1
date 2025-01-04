@@ -43,7 +43,11 @@ public class Main {
         int x = 0;
         int y = 0;
 
+        input = input.replaceAll(" ","");
+
         String[] inputExpession = input.split("[+\\-*/]");
+
+
 
         if (inputExpession.length != 2) {
             throw new Exception(" формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)\n");
